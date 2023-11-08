@@ -44,7 +44,7 @@ def test_createmaincategory():
 def test_updatemaincategory():
     url="http://localhost:9000/api/maincategory/6515da1d4ec99d181a0cd694"
     
-    file=open("TestData\createmaincategory.json",'r')
+    file=open("TestData/createmaincategory.json",'r')
     
     inputfile=file.read()
     payload=json.loads(inputfile)
