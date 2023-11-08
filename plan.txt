@@ -1,0 +1,6 @@
+seperate main db and test db
+Make single test file for each API set
+    -get
+    -creatwe
+    -update
+    -delete

@@ -1,0 +1,9 @@
+import requests
+
+
+url="http://localhost:8000/api/maincategory/6515cb2b4ec99d181a0cd677"
+headers={"Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1MTVjYWQxYTcxNzNjODAyZWVlN2FiOSIsIm5hbWUiOiJtYXN0ZXIxIiwidXNlcm5hbWUiOiJtYXN0ZXIxIiwiZW1haWwiOiJtYXN0ZXIxQGdtYWlsLmNvbSIsInBob25lIjoiOTI4MzQwOTMyMiIsInBhc3N3b3JkIjoiJDJiJDEyJGp6TGRHV2twaHUyLjA3aWJ5RzJ0OWVZbmw4VEMzVUxsYk9na3pRUmtvcFhCSW9wbjN0QmZHIiwicm9sZSI6ImFkbWluIiwiX192IjowfSwiaWF0IjoxNjk1OTI3MDEyfQ.ys6fDbxc9F-joJivvemJa-GhI83ppRWQ6-33RF8AuTc"}
+
+response=requests.delete(url,headers=headers)
+
+print(response.status_code)
