@@ -7,7 +7,7 @@ import pytest
 
 
 def test_getMainCategory():
-    url="http://localhost:8000/api/maincategory"
+    url="http://localhost:9000/api/maincategory"
     
     # json_response=json.loads(response.text)
     try:
@@ -20,14 +20,14 @@ def test_getMainCategory():
 def test_createmaincategory():
 
     # login
-    url="http://localhost:8000/api/user/login"
+    url="http://localhost:9000/api/user/login"
     payload={"username":"master1","password":"Master@123"}
     resp=requests.post(url,json=payload)
     token=(resp.json()["token"])
 
 
 
-    url="http://localhost:8000/api/maincategory"
+    url="http://localhost:9000/api/maincategory"
     
     file=open("TestData\createmaincategory.json",'r')
     
@@ -42,7 +42,7 @@ def test_createmaincategory():
     assert response.status_code==201
 
 def test_updatemaincategory():
-    url="http://localhost:8000/api/maincategory/6515da1d4ec99d181a0cd694"
+    url="http://localhost:9000/api/maincategory/6515da1d4ec99d181a0cd694"
     
     file=open("TestData\createmaincategory.json",'r')
     

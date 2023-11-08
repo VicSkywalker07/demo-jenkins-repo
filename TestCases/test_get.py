@@ -11,14 +11,14 @@ def sample_fixture():
 @pytest.mark.skip(reason="no way of currently testing this")
 @pytest.mark.smoke
 def test_getrequest(sample_fixture):
-    url="http://localhost:8000/api/maincategory/"
+    url="http://localhost:9000/api/maincategory/"
 
     response=requests.get(url)
     assert response.status_code==200
 @pytest.mark.skip(reason="no way of currently testing this")
 @pytest.mark.sanity
 def test_getrequest2(sample_fixture):
-    url="http://localhost:8000/api/subcategory/"
+    url="http://localhost:9000/api/subcategory/"
 
     response=requests.get(url)
     assert response.status_code==200
